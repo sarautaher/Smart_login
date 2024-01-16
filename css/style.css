@@ -1,0 +1,21 @@
+body{
+    background-color: #24353f;
+}
+h1{
+    color: #17A2B8;
+    font-size: 40px;
+}
+.form {
+    box-shadow: 8px 8px 8px 8px #000;
+}
+input{
+    background-color: transparent;
+}
+.form-group input{
+    background-color: transparent;
+    border: 1px solid white;
+
+}
+a{
+    text-decoration: none;
+}
