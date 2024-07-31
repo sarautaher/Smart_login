@@ -1,7 +1,4 @@
-// var num=Number(window.prompt('enter num1'));
-// var nam=Number(window.prompt('enter num2'));
-// var avg=(nam+num)/2
-// console.log(avg);
+
 let email=document.getElementById('email');
 let password=document.getElementById('password');
 let exist=document.getElementById('exist');
@@ -49,7 +46,7 @@ async function ADD(){
           let response = await fetch('https://ecommerce.routemisr.com/api/v1/auth/signin', requestOptions);
           let result = await response.json();
           if (result.message =='success') {
-            exist.innerHTML = "Login successful!";
+            exist.innerHTML =result.message ;
         } else {
             exist.innerHTML = "Login failed. " + (result.error || "Please try again.");
         } 
